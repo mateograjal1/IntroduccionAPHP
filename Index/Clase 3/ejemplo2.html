@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejemplo 2</title>
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <p>
+            <label>Nombre de contacto </label><input type="text" name="txtNombre" placeholder="Introduzca su nombre"><br>
+        </p>
+        <form>
+            <label>Apellido *</label><input type="text" name="txtApellido" placeholder="Introduzca su apellido" required><br>
+            <label>Email de contacto *</label><input type="email" name="txtEmail" placeholder="Email valido" required><br>
+            <label>Categoria *</label>
+            <select name="sCategoria" required>
+                <option value="" disabled selected hidden>Tipo de consulta</option>
+                <option value="medios">Medios</option>
+                <option value="instituciones">Instituciones</option>
+                <option value="estudiantes">Estudiantes</option>
+            </select>
+        <p>
+            <label>Consulta *</label><textarea name="taConsulta" rows="5" cols="30" required></textarea>
+        </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </form>
+        <footer>
+            <a href="indexClase3.html">Volver al indice de la clase 3</a>
+        </footer>
+    </body>
+    
+</html>
