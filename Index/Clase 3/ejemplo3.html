@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <form>
+            <p>
+                <label>Nombre de contacto </label><input type="text" name="txtNombre" placeholder="Introduzca su nombre" required pattern="^([a-z]|[A-Z])+$"><br>
+            </p>
+            <label>Apellido *</label><input type="text" name="txtApellido" placeholder="Introduzca su apellido" required pattern="^[A-Z][a-z]{0,14}$"><br>
+            <label>Celular *</label><input type="text" name="txtCelular" required pattern="^3[0-9]{9}$"><br>
+            <label>Email de contacto *</label><input type="email" name="txtEmail" placeholder="Email valido" required><br>
+            <label>Categoria *</label>
+            <select name="sCategoria" required>
+                <option value="" disabled selected hidden>Tipo de consulta</option>
+                <option value="medios">Medios</option>
+                <option value="instituciones">Instituciones</option>
+                <option value="estudiantes">Estudiantes</option>
+            </select>
+            <p>
+                <label>Consulta *</label><textarea name="taConsulta" rows="5" cols="30" required></textarea>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </form>
+        <footer>
+            <a href="indexClase3.html">Volver al indice de la clase 3</a>
+        </footer>
+    </body>
+</html>
